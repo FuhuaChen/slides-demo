@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <title>轮播</title>
     <style>
+        .wrapper{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
         .window{
-            width: 200px;
+            width: 300px;
             overflow: hidden;
         }
         .images{
@@ -15,6 +22,9 @@
         }
         .images > img{
             vertical-align: top;
+        }
+        .buttons{
+            margin-top: 10px;
         }
         .buttons > span{
             vertical-align: top;
@@ -28,20 +38,22 @@
     </style>
 </head>
 <body>
-<div class="window">
-    <div class="images" id="images">
-        <img src="https://i.loli.net/2018/04/17/5ad5b25ad9d7b.jpg" alt="图片1" height=200>
-        <img src="https://i.loli.net/2018/04/17/5ad5b276a7aa0.jpg" alt="图片2" height=200>
-        <img src="https://i.loli.net/2018/04/17/5ad5b29b3b357.jpg" alt="图片3" height=200>
-        <img src="https://i.loli.net/2018/04/17/5ad5b29b61260.jpg" alt="图片4" height=200>
+<div class="wrapper">
+    <div class="window">
+        <div class="images" id="images">
+            <img src="https://i.loli.net/2018/04/17/5ad5b25ad9d7b.jpg" alt="图片1" height=300>
+            <img src="https://i.loli.net/2018/04/17/5ad5b276a7aa0.jpg" alt="图片2" height=300>
+            <img src="https://i.loli.net/2018/04/17/5ad5b29b3b357.jpg" alt="图片3" height=300>
+            <img src="https://i.loli.net/2018/04/17/5ad5b29b61260.jpg" alt="图片4" height=300>
+        </div>
     </div>
-</div>
-<span class="buttons" id="buttons">
+    <span class="buttons" id="buttons">
     <span>1</span>
     <span>2</span>
     <span>3</span>
     <span>4</span>
 </span>
+</div>
 <script src="main.js"></script>
 </body>
 </html>
