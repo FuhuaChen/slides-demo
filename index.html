@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <style>
+        .window{
+            width: 200px;
+            overflow: hidden;
+        }
+        .images{
+            display: flex;
+            transition: all 0.5s;
+        }
+        .images > img{
+            vertical-align: top;
+        }
+        .buttons > span{
+            vertical-align: top;
+            border-radius: 50%;
+            padding: 0 6px;
+            background: rgb(204, 204, 204)
+        }
+        .buttons > span.active{
+            background: rgb(0, 122, 204)
+        }
+    </style>
+</head>
+<body>
+<div class="window">
+    <div class="images" id="images">
+        <img src="https://i.loli.net/2018/04/17/5ad5b25ad9d7b.jpg" alt="图片1" height=200>
+        <img src="https://i.loli.net/2018/04/17/5ad5b276a7aa0.jpg" alt="图片2" height=200>
+        <img src="https://i.loli.net/2018/04/17/5ad5b29b3b357.jpg" alt="图片3" height=200>
+        <img src="https://i.loli.net/2018/04/17/5ad5b29b61260.jpg" alt="图片4" height=200>
+    </div>
+</div>
+<span class="buttons" id="buttons">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</span>
+<script src="main.js"></script>
+</body>
+</html>
